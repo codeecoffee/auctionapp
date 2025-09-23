@@ -1,3 +1,4 @@
+using auction_app.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace auction_app.Data;
@@ -8,4 +9,6 @@ public class AuctionDbContext : DbContext
     {
         
     }
+    
+    public DbSet<Auction>  Auctions {get; set;}
 }

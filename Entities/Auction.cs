@@ -1,5 +1,7 @@
-namespace auction_app.Entities;
+using System.ComponentModel.DataAnnotations.Schema;
 
+namespace auction_app.Entities;
+[Table("Auctions")]
 public class Auction
 {
     public Guid Id { get; set; }
