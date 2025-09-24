@@ -14,6 +14,6 @@ public class Item
     public string ImageUrl {get; set;}
     
     //nav properties
-    public Auction Auction {get; set;}
+    public Auction? Auction {get; set;}
     public Guid AuctionId {get; set;}
 }
