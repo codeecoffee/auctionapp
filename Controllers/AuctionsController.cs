@@ -19,7 +19,6 @@ public class AuctionsController : ControllerBase
         _context = context;
         _mapper = mapper;
     }
-
     [HttpGet]
     public async Task<ActionResult<List<AuctionDto>>> GetAllAuctions()
     {
@@ -29,7 +28,6 @@ public class AuctionsController : ControllerBase
             .ToListAsync();
         return _mapper.Map<List<AuctionDto>>(auctions);
     }
-
     [HttpGet("{id}")]
     public async Task<ActionResult<AuctionDto>> GetAuctionById(Guid id)
     {
@@ -39,7 +37,6 @@ public class AuctionsController : ControllerBase
         if (auction == null) return NotFound();
         return _mapper.Map<AuctionDto>(auction);
     }
-
     [HttpPost]
     public async Task<ActionResult<AuctionDto>> CreateAuction(CreateAuctionDto auctionDto)
     {
@@ -54,7 +51,6 @@ public class AuctionsController : ControllerBase
         return CreatedAtAction(nameof(GetAuctionById), 
             new { auction.Id }, _mapper.Map<AuctionDto>(auction));
     }
-
     [HttpPut("{id}")]
     public async Task<ActionResult> UpdateAuction(Guid id, UpdateAuctionDto updateAuctionDto)
     {
@@ -71,5 +67,16 @@ public class AuctionsController : ControllerBase
         var result = await _context.SaveChangesAsync() > 0;
         if (result) return Ok();
         return BadRequest("Could not save changes to the DB");
+    }
+    [HttpDelete("{id}")]
+    public async Task<ActionResult> DeleteAuction(Guid id)
+    {
+        var auction = await _context.Auctions.FindAsync(id);
+        if (auction == null) return NotFound();
+        _context.Auctions.Remove(auction);
+        var result = await _context.SaveChangesAsync() > 0;
+        if (!result) return BadRequest("Could not delete auction");
+        return Ok();
+       
     }
 }
