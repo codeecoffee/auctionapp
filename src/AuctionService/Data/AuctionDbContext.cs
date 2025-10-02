@@ -1,14 +1,12 @@
-using auction_app.Entities;
+using AuctionService.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace auction_app.Data;
+namespace AuctionService.Data;
 
 public class AuctionDbContext : DbContext
 {
     public AuctionDbContext(DbContextOptions options) : base(options)
     {
-        
     }
-    
-    public DbSet<Auction>  Auctions {get; set;}
+    public DbSet<Auction> Auctions { get; set; }
 }

@@ -5,14 +5,52 @@
     <projectFile profileName="https">auction-app.csproj</projectFile>
     <projectFile profileName="http">src/AuctionService/AuctionService.csproj</projectFile>
     <projectFile profileName="https">src/AuctionService/AuctionService.csproj</projectFile>
+    <projectFile profileName="http">src/SearchService/SearchService.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c707d675-9a25-40fd-b221-0310e0571db6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/auction-app.sln" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/auction-app.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AuctionService/Controllers/AuctionControllers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SearchService/Data/auctions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/.idea/.idea.auction-app/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/.idea/.idea.auction-app/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/.idea/.idea.auction-app/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/.idea/.idea.auction-app/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Controllers/AuctionsController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/DTOs/AuctionDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/DTOs/AuctionDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/DTOs/CreateAuctionDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/DTOs/CreateAuctionDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/DTOs/UpdateAuctionDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/DTOs/UpdateAuctionDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Data/AuctionDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Data/AuctionDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Data/DbInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Data/DbInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Data/Migrations/20250924175816_InitialCreate.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Data/Migrations/20250924175816_InitialCreate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Data/Migrations/AuctionDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Entities/Auction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Entities/Auction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Entities/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Entities/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Entities/Status.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Entities/Status.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/RequestHelpers/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/RequestHelpers/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/RequestHelpers/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/RequestHelpers/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/RequestHelpers/MappingProfiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/RequestHelpers/MappingProfiles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/auction-app.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/auction-app.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/auction-app.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/specs/architecture.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/specs/auctionSvcSpec.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/specs/bidService.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/specs/gatewaySvcSpec.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/specs/identitySvcSpec.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/specs/notificationSvcSpec.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +58,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/AuctionService" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -35,7 +73,16 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://A:/Projects/auction-app/Controllers/AuctionsController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/AuctionService/Controllers/AuctionControllers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/AuctionService/DTOs/AuctionDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/AuctionService/DTOs/CreateAuctionDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/AuctionService/DTOs/UpdateAuctionDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/AuctionService/Data/AuctionDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/AuctionService/Data/DbInitializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/AuctionService/Entities/Auction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/AuctionService/Entities/Item.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/AuctionService/Entities/Status.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/AuctionService/RequestHelpers/MappingProfiles.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -55,31 +102,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;A:/Projects/auction-app&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "A:/Projects/auction-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ],
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;HgIgnore&quot;
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "HgIgnore"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.auction-app: http">
     <configuration name="AuctionService: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/AuctionService/AuctionService.csproj" />
@@ -101,6 +148,22 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/AuctionService/AuctionService.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
       <option name="LAUNCH_PROFILE_NAME" value="https" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="SearchService: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/SearchService/SearchService.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -155,6 +218,7 @@
       <updated>1758659321622</updated>
       <workItem from="1758659323494" duration="22825000" />
       <workItem from="1759335014712" duration="5022000" />
+      <workItem from="1759379477889" duration="2860000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -236,6 +300,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/src/AuctionService" />
+    </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="first commit" />
     <MESSAGE value="chore: models created" />

@@ -1,11 +1,10 @@
-using auction_app.Data;
-using auction_app.DTOs;
-using auction_app.Entities;
+namespace AuctionService.Controllers;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
-namespace auction_app.Controllers;
+using AuctionService.Data;
+using AuctionService.DTOs;
+using AuctionService.Entities;
 
 [ApiController]
 [Route("api/auctions")]

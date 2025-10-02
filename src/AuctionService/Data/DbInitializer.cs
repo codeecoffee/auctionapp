@@ -1,7 +1,9 @@
-using auction_app.Entities;
+
+
+using AuctionService.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace auction_app.Data;
+namespace AuctionService.Data;
 
 public class DbInitializer
 {
@@ -16,12 +18,10 @@ public class DbInitializer
         context.Database.Migrate();
         if (context.Auctions.Any())
         {
-            Console.WriteLine("There is already data in the database.");
+            Console.WriteLine("There is data in database");
             return;
         }
-
-        var auctions = new List<Auction>()
-        { 
+        var auctions = new List<Auction>() { 
             // 1 Ford GT
             new Auction
             {
@@ -201,8 +201,8 @@ public class DbInitializer
                 }
             }
         };
+        
         context.AddRange(auctions);
-        //updates the database
         context.SaveChanges();
     }
 }

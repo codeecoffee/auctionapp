@@ -1,22 +1,19 @@
-using auction_app.Data;
+using AuctionService.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-
 builder.Services.AddControllers();
-builder.Services.AddDbContext<AuctionDbContext>(opt =>
+builder.Services.AddDbContext<AuctionDbContext>(options =>
 {
-    opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 //Looks for any classes that derives from the Profile class
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+var app = builder.Build();
 app.UseAuthorization();
 app.MapControllers();
+
 try
 {
     DbInitializer.InitDb(app);
@@ -25,4 +22,5 @@ catch (Exception ex)
 {
     Console.WriteLine(ex.Message);
 }
+
 app.Run();

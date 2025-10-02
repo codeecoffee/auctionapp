@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace auction_app.Entities;
+namespace AuctionService.Entities;
+
 [Table("Auctions")]
 public class Auction
 {
